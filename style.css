@@ -100,9 +100,13 @@
 
   /* HOME */
   #home {
-    text-align: center;
-    margin-top: 3em;
-  }
+  text-align: center;
+  margin-top: 3em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
  #home img {
   width: 160px;
@@ -110,7 +114,7 @@
   border-radius: 50%;
   border: 3px solid #3ec5ff;
   object-fit: cover;
-  margin: 0 auto 1em;
+  margin-bottom: 1em;
   display: block;
 }
 
