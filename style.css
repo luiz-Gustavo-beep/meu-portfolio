@@ -147,21 +147,21 @@
   }
 
   .btn {
-    border: 1px solid #6cff52;
-    color: #6cff52;
-    padding: 0.6em 1.4em;
-    margin: 0 0.4em;
-    display: inline-block;
-    border-radius: 0.4em;
-    transition: 0.3s;
-    text-decoration: none;
-  }
+  border: 1px solid #6cff52;
+  color: #6cff52; /* cor do texto */
+  background: transparent; /* garante contraste */
+  padding: 0.6em 1.4em;
+  margin: 0 0.4em;
+  display: inline-block;
+  border-radius: 0.4em;
+  transition: 0.3s;
+}
 
-  .btn:hover {
-    background: linear-gradient(135deg, #6cff52, #3ec5ff);
-    color: black;
-    border: 1px solid transparent;
-  }
+  .btn {
+  background: #6cff52;
+  color: black;
+  border: none;
+}
 
   /* ABOUT */
   #about {
