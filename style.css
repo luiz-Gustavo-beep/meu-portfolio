@@ -148,7 +148,7 @@
 
   .btn {
   border: 1px solid #6cff52;
-  color: #6cff52; /* cor do texto */
+  color: black; /* cor do texto */
   background: transparent; /* garante contraste */
   padding: 0.6em 1.4em;
   margin: 0 0.4em;
