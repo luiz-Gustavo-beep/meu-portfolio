@@ -2,222 +2,421 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Gustavo Belon - Computer Science student and developer. Explore my projects and skills.">
-  <title>Gustavo Belon | Developer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+    <title>Luiz Gustavo | Developer Portfolio</title>
 
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+        (function() {
+            emailjs.init({
+                publicKey: "iXGGsmmjMSdQPrIQk"
+            });
+        })();
+    </script>
 </head>
 
 <body>
 
-<header>
-  <nav>
-    <a href="#home" class="logo">Gustavo<span>.</span></a>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">
+                Luiz <span>Gustavo</span>
+            </a>
 
-    <ul class="links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+            <ul class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-    <i class="bx bx-menu" id="menu" aria-label="Open navigation menu" role="button" tabindex="0"></i>
-  </nav>
-</header>
+            <i class="bx bx-menu" id="menu"></i>
+        </nav>
+    </header>
 
-<main>
+    <main>
 
-  <!-- HOME -->
-  <section id="home">
-    <div class="home-container">
+        <!-- HOME -->
+        <section id="home">
+            <div class="home-container">
 
-      <div class="home-content">
-        <span class="home-tag">
-          <span class="status-dot"></span>
-          Open to opportunities
-        </span>
+                <div class="home-content">
 
-        <p class="home-greeting">Hello, I'm</p>
+                    <span class="section-label">
+                        WELCOME TO MY PORTFOLIO
+                    </span>
 
-        <h1>Gustavo <span>Belon.</span></h1>
+                    <h1>
+                        Hi, I'm <span>Luiz Gustavo</span>
+                    </h1>
 
-        <h2>Computer Science Student <span>& Developer</span></h2>
+                    <h2>
+                        Software Developer
+                    </h2>
 
-        <p class="home-description">
-          I'm passionate about software development, with hands-on
-          experience building applications using Java, Spring Boot
-          and web technologies. Currently looking for my first
-          opportunity in tech.
+                    <p>
+                        Computer Science student passionate about
+                        technology and software development.
+                        I enjoy building applications, solving
+                        problems and continuously improving
+                        my programming skills.
+                    </p>
+
+                    <div class="home-buttons">
+                        <a href="#projects" class="btn">
+                            View Projects
+                        </a>
+
+                        <a href="#contact" class="btn-outline">
+                            Contact Me
+                        </a>
+                    </div>
+
+                    <div class="social-icons">
+                        <a href="https://github.com/luiz-Gustavo-beep"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub">
+                            <i class="bx bxl-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/feed/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="LinkedIn">
+                            <i class="bx bxl-linkedin"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/gu_belln/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Instagram">
+                            <i class="bx bxl-instagram"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="home-visual">
+                    <div class="photo-frame">
+                        <img src="./usuario.JPG"
+                             alt="Luiz Gustavo">
+                    </div>
+
+                    <div class="photo-decoration"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+
+            <div class="about-container">
+
+                <span class="section-label">
+                    GET TO KNOW ME
+                </span>
+
+                <h2>About Me</h2>
+
+                <p>
+                    I'm a Computer Science student interested
+                    in software development and technology.
+                    I have been developing projects using
+                    Java, Spring Boot, MySQL and web
+                    technologies.
+                </p>
+
+                <p>
+                    I'm constantly learning new technologies
+                    and looking for opportunities to apply
+                    my knowledge in real-world projects.
+                    My goal is to grow professionally as
+                    a software developer.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+
+            <div class="projects-heading">
+
+                <span class="section-label">
+                    MY WORK
+                </span>
+
+                <h2>Featured Projects</h2>
+
+                <p>
+                    A selection of projects I've developed
+                    while improving my software development
+                    skills.
+                </p>
+
+            </div>
+
+            <div class="projects-container">
+
+                <!-- PROJECT 1: RIBEIRO AUTOMÓVEIS -->
+                <article class="project-box">
+
+                    <div class="project-image">
+                        <img
+                            src="./ribeiro-automoveis.png"
+                            alt="Ribeiro Automóveis vehicle showroom"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            FULL STACK PROJECT
+                        </span>
+
+                        <h3>Ribeiro Automóveis</h3>
+
+                        <p class="project-description">
+                            A vehicle management web application
+                            developed with Java and Spring Boot.
+                            Features a vehicle showroom with
+                            search, filtering, image galleries
+                            and integration with a REST API.
+                        </p>
+
+                        <div class="project-technologies">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>MySQL</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-actions">
+
+                            <a
+                                href="https://github.com/luiz-Gustavo-beep/faculdadea_ecomercee"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+                                <i class="bx bxl-github"></i>
+                                View Code
+                                <i class="bx bx-link-external"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- PROJECT 2: SPRING EVENTS API -->
+                <article class="project-box">
+
+                    <div class="project-image">
+                        <img
+                            src="./spring-events-api.png"
+                            alt="Spring Events API login and registration interface"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            FULL STACK PROJECT
+                        </span>
+
+                        <h3>Spring Events API</h3>
+
+                        <p class="project-description">
+                            An event management web application
+                            built with Java and Spring Boot.
+                            Features user authentication,
+                            registration, event management
+                            and event enrollment.
+                        </p>
+
+                        <div class="project-technologies">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>MySQL</span>
+                            <span>REST API</span>
+                        </div>
+
+                        <div class="project-actions">
+
+                            <a
+                                href="https://github.com/luiz-Gustavo-beep/spring-events-api"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+                                <i class="bx bxl-github"></i>
+                                View Code
+                                <i class="bx bx-link-external"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+
+            <div class="skills-container">
+
+                <span class="section-label">
+                    MY KNOWLEDGE
+                </span>
+
+                <h2>My Skills</h2>
+
+                <div class="skills-content">
+
+                    <div class="skills-box">
+
+                        <h3>Technical Skills</h3>
+
+                        <ul>
+                            <li>Java</li>
+                            <li>Spring Boot</li>
+                            <li>MySQL</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Git & GitHub</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="skills-box">
+
+                        <h3>Other Skills</h3>
+
+                        <ul>
+                            <li>Problem Solving</li>
+                            <li>Teamwork</li>
+                            <li>Communication</li>
+                            <li>Continuous Learning</li>
+                            <li>Adaptability</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+
+            <div class="contact-container">
+
+                <span class="section-label">
+                    GET IN TOUCH
+                </span>
+
+                <h2>Contact Me</h2>
+
+                <p>
+                    Have a question or want to work together?
+                    Feel free to send me a message.
+                </p>
+
+                <form>
+
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Your Name"
+                            required
+                        >
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Your Email"
+                            required
+                        >
+                    </div>
+
+                    <textarea
+                        name="message"
+                        placeholder="Your Message"
+                        rows="6"
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="btn">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Luiz Gustavo. All rights reserved.
         </p>
 
-        <div class="home-actions">
-          <a href="#projects" class="btn btn-primary">
-            <i class="bx bx-code-alt"></i>
-            View Projects
-          </a>
+        <div class="footer-socials">
 
-          <a href="#contact" class="btn btn-secondary">
-            <i class="bx bx-envelope"></i>
-            Contact Me
-          </a>
+            <a
+                href="https://github.com/luiz-Gustavo-beep"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+            >
+                <i class="bx bxl-github"></i>
+            </a>
+
+            <a
+                href="https://www.linkedin.com/feed/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+            >
+                <i class="bx bxl-linkedin"></i>
+            </a>
+
         </div>
 
-        <div class="home-socials">
-          <a href="https://github.com/luiz-Gustavo-beep"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="GitHub">
-            <i class="bx bxl-github"></i>
-          </a>
+    </footer>
 
-          <a href="https://www.linkedin.com/feed/"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="LinkedIn">
-            <i class="bx bxl-linkedin-square"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="home-visual">
-        <div class="photo-frame">
-          <img src="./usuario.JPG" alt="Gustavo Belon">
-        </div>
-
-        <div class="photo-decoration decoration-one"></div>
-        <div class="photo-decoration decoration-two"></div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="about-box">
-      <h2>About Me</h2>
-      <p>
-        I'm currently studying Computer Science and improving my skills
-        to start my career as a developer.
-      </p>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="projects-container">
-      <div class="project-box">
-        <img src="./web-design.jpg" alt="Web Design illustration">
-        <h3>Web Design</h3>
-      </div>
-
-      <div class="project-box">
-        <img src="./web-dev.jpg" alt="Web Development illustration">
-        <h3>Web Development</h3>
-      </div>
-
-      <div class="project-box">
-        <img src="./graphic.jpg" alt="Graphic Design illustration">
-        <h3>Graphic Design</h3>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Skills</h2>
-
-    <div class="skills">
-      <ul>
-        <li><i class="bx bx-chevron-right"></i> HTML</li>
-        <li><i class="bx bx-chevron-right"></i> CSS</li>
-        <li><i class="bx bx-chevron-right"></i> JavaScript</li>
-        <li><i class="bx bx-chevron-right"></i> Python</li>
-        <li><i class="bx bx-chevron-right"></i> Hibernate / JPA</li>
-      </ul>
-
-      <ul>
-        <li><i class="bx bx-chevron-right"></i> Java</li>
-        <li><i class="bx bx-chevron-right"></i> MySQL</li>
-        <li><i class="bx bx-chevron-right"></i> English: Intermediate</li>
-        <li><i class="bx bx-chevron-right"></i> APIs REST</li>
-        <li><i class="bx bx-chevron-right"></i> Spring Boot</li>
-        <li><i class="bx bx-chevron-right"></i> Swagger (OpenAPI)</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-
-    <form>
-      <div class="input-box">
-        <label for="from_name">Full Name</label>
-        <input id="from_name" type="text" name="from_name"
-               placeholder="Enter your name" required>
-      </div>
-
-      <div class="input-box">
-        <label for="email">Email</label>
-        <input id="email" type="email" name="email"
-               placeholder="Enter your email" required>
-      </div>
-
-      <div class="input-box">
-        <label for="message">Message</label>
-        <textarea id="message" name="message"
-                  placeholder="Your message" required></textarea>
-      </div>
-
-      <button type="submit" class="btn">Send</button>
-    </form>
-  </section>
-
-</main>
-
-<footer>
-  <div class="social-icons">
-    <a href="https://www.linkedin.com/feed/"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="LinkedIn">
-      <i class="bx bxl-linkedin-square"></i>
-    </a>
-
-    <a href="https://www.instagram.com/gu_belln/"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="Instagram">
-      <i class="bx bxl-instagram-alt"></i>
-    </a>
-
-    <a href="https://github.com/luiz-Gustavo-beep"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="GitHub">
-      <i class="bx bxl-github"></i>
-    </a>
-  </div>
-</footer>
-
-<!-- EMAILJS -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-<script>
-  (function() {
-    emailjs.init("iXGGsmmjMSdQPrIQk");
-  })();
-</script>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>

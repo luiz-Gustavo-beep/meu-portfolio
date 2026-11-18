@@ -1,5 +1,5 @@
 
-/* RESET E CORES */
+/* CORES E RESET */
 :root {
   --bg: #0b1120;
   --surface: #151e30;
@@ -324,47 +324,138 @@ section h2 {
   font-size: 1.05rem;
 }
 
-/* PROJETOS - TEMPORÁRIO */
+/* PROJETOS */
 #projects {
+  background: var(--bg);
+}
+
+.projects-heading {
   text-align: center;
+  max-width: 650px;
+  margin: 0 auto 50px;
+}
+
+.section-label {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.projects-heading h2 {
+  margin: 12px 0 15px;
+}
+
+.projects-heading p {
+  color: var(--muted);
 }
 
 .projects-container {
-  max-width: 1200px;
+  max-width: 1150px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns:
-    repeat(auto-fit, minmax(min(100%, 280px), 1fr));
-  gap: 24px;
+  gap: 28px;
 }
 
 .project-box {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: stretch;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 18px;
-  text-align: left;
-  transition: 0.3s;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s, border-color 0.3s;
 }
 
 .project-box:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
   border-color: var(--primary);
 }
 
-.project-box img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 18px;
+.project-image {
+  min-height: 340px;
+  overflow: hidden;
+  background: #101827;
 }
 
-.project-box h3 {
+.project-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.4s;
+}
+
+.project-box:hover .project-image img {
+  transform: scale(1.03);
+}
+
+.project-content {
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.project-category {
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.project-content h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.project-description {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 28px;
+}
+
+.project-technologies span {
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: rgba(59, 130, 246, 0.08);
+  color: #bfdbfe;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.project-link,
+.project-link:visited {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--accent);
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.project-link:hover {
+  color: white;
+}
+
+.project-link i {
   font-size: 1.2rem;
 }
 
-/* SKILLS - TEMPORÁRIO */
+/* SKILLS */
 #skills {
   text-align: center;
   background: #101a2b;
@@ -511,6 +602,15 @@ footer {
   .photo-frame {
     width: min(75%, 330px);
   }
+
+  .project-box {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    height: 300px;
+    min-height: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -555,6 +655,10 @@ footer {
   .skills ul {
     width: min(100%, 280px);
   }
+
+  .project-content {
+    padding: 28px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -572,6 +676,14 @@ footer {
 
   .photo-frame {
     width: min(85%, 300px);
+  }
+
+  .project-image {
+    height: 220px;
+  }
+
+  .project-content {
+    padding: 22px;
   }
 }
 
