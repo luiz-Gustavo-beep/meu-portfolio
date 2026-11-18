@@ -792,7 +792,6 @@ footer {
   }
 }
 
-
 /* DESTAQUE DO NÍVEL DE INGLÊS */
 
 .language-card {
@@ -821,4 +820,57 @@ footer {
 .language-card p {
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+/* MELHORIAS VISUAIS DO CONTACT */
+
+#contact .contact-container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+#contact .contact-container > p {
+  max-width: 550px;
+  margin: 0 auto;
+  color: var(--muted);
+}
+
+#contact .input-group {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin-top: 36px;
+  padding: 30px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+}
+
+#contact form input,
+#contact form textarea {
+  background: var(--bg);
+}
+
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+  color: var(--muted);
+}
+
+#contact form .btn {
+  align-self: stretch;
+}
+
+/* CONTACT NO CELULAR */
+@media (max-width: 480px) {
+  #contact .input-group {
+    grid-template-columns: 1fr;
+  }
+
+  #contact form {
+    padding: 20px;
+  }
 }
